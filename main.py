@@ -38,14 +38,6 @@ def main():
         X, y, feature_columns, target_columns = prepare_features_targets(df)
         X_train, X_test, y_train, y_test = split_dataset(X, y)
         
-        # Run all analyses
-        risk_model = RiskAssessmentModel()
-        route_optimizer = RouteOptimizer()
-        maintenance_predictor = MaintenancePredictor()
-        external_analyzer = ExternalFactorsAnalyzer()
-        inventory_manager = InventoryManager()
-        
-        # Save models
         models_dir = f'{output_dir}/models'
         os.makedirs(models_dir, exist_ok=True)
         
