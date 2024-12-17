@@ -1,0 +1,1 @@
+[Content of inventory_management.py]
